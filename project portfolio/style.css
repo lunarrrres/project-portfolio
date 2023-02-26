@@ -5,31 +5,33 @@ a {
     display: inline-block;
 }
 .image {
-    display: inline-block;
+    display: block;
     width: 500px;
+    height: 600px;
     border: solid black 3px;
     border-radius: 3px;
+    margin: 0 auto;
+    background-image: url(./girl.webp) ;
 }
 .imageCol {
     padding-right: 50px;
     border-right: solid black 3px;
     transform: translateY(100px);
+    margin-bottom: 50px;
 }
 .textCol {
-    transform: translateY(100px);
     text-align: center;
 }
 .name {
     font-size: 20px;
-}
-.icons {
-    transform: translateY(1200%);
+    margin-bottom: 2rem;
+    margin-top: 5rem;
 }
 .buttons {
-    transform: translateY(300%);
+    margin-bottom: 5rem;
 }
 .textBio {
-    transform: translateY(100%);
+    margin-bottom: 4rem;
 }
 @keyframes buttons-animation {
     from {
@@ -50,7 +52,6 @@ a {
     margin-right: 100px;
 }
 .btnPortfolio:hover{
-
     background-color: black;
     color: white;
     animation: 0.5s buttons-animation;
@@ -112,7 +113,18 @@ a {
       border: none;
     }
     .icons {
-        transform: translateY(200%);
         padding-bottom: 50px;
     }
   }
+@media screen and (max-width: 385px) {
+    .btnPortfolio, .btnMe {
+        min-width: 200px;
+        width: 100%;
+    }
+    .btnPortfolio {
+        margin-bottom: 1.5rem;
+    }
+    .buttons {
+        margin-bottom: 3rem;
+    }
+}
